@@ -1,0 +1,187 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #74ebd5, #acb6e5);
+    min-height: 100vh;
+}
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.search-container,
+.report-container {
+    width: 100%;
+    max-width: 480px;
+    background: white;
+    padding: 35px;
+    border-radius: 22px;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+.logo {
+    font-size: 55px;
+    margin-bottom: 12px;
+}
+
+h1 {
+    color: #234e70;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin: 16px 0 7px;
+    color: #333;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    outline: none;
+    font-size: 15px;
+}
+
+input:focus {
+    border-color: #3984cf;
+    box-shadow: 0 0 5px rgba(57, 132, 207, 0.3);
+}
+
+button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #2878c7;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #185b9b;
+}
+
+button:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+.error {
+    color: red;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+.location {
+    margin: 25px 0;
+    color: #555;
+    line-height: 1.8;
+}
+
+.location h2 {
+    color: #234e70;
+    font-size: 27px;
+}
+
+.main-weather {
+    background: linear-gradient(135deg, #74ebd5, #4b91d1);
+    padding: 25px;
+    border-radius: 18px;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.weather-icon {
+    font-size: 65px;
+    margin-bottom: 10px;
+}
+
+.main-weather h2 {
+    font-size: 48px;
+    margin: 10px 0;
+}
+
+.main-weather h3 {
+    font-size: 19px;
+}
+
+.details {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+}
+
+.weather-box {
+    background: #f1f7fc;
+    padding: 20px 10px;
+    border-radius: 13px;
+}
+
+.weather-box span {
+    font-size: 27px;
+}
+
+.weather-box h4 {
+    margin: 10px 0;
+    color: #555;
+}
+
+.weather-box p {
+    color: #2878c7;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.back-button {
+    background: #234e70;
+}
+
+.source {
+    color: #888;
+    font-size: 12px;
+    margin-top: 18px;
+}
+
+@media (max-width: 480px) {
+    .search-container,
+    .report-container {
+        padding: 23px 18px;
+    }
+
+    .details {
+        gap: 10px;
+    }
+
+    .weather-box {
+        padding: 15px 5px;
+    }
+}
